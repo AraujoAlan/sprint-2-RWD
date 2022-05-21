@@ -1,3 +1,19 @@
+@keyframes bouce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
 .topo1{    
     height: -10px;
 }
@@ -155,6 +171,16 @@
     margin-top: 32px;
 }
 
+.btnSalvarAlteracoes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.btnSalvarAlteracoes:hover{
+    animation: bouce 1s;
+}
+
 .flex{
     display: flex;
 }
@@ -181,4 +207,10 @@
 
 .alignItemsCenter{
     align-content: center;
+}
+
+.fieldsetContent{
+    margin-left: 500px;
+    margin-right: 500px; 
+    text-align: center; 
 }

@@ -5,35 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configurações</title>
+    <link rel="stylesheet" href="./css/root.css" />
+    <link rel="stylesheet" href="./css/styles.css" /> 
+
 </head>
     <body>
 
-        <h2>Configurações</h2>
-        <p>Página referente ao melhoramento da experiência do usuário na plataforma, visando a adequação do site às preferências e necessidades do usuário, iniciando a implementação de um ambiente inclusivo e integrador.</p>
-
-            <div>
-                <label for="">brilho</label>
-                <input type="range">
+        <div class="topo"></div>
+        <div class="topoContent">
+            <div class="flexRow justifyContentCenter alignContentCenter flex logo">
+                <h1>Enjoy &</h1>
+                <h1 class="logoBlack">Job</h1>
             </div>
-
-            <div> <br>
-                <label for="">Claro</label>
-                <input type="radio">
-                <label for="">Escuro</label>
-                <input type="radio">
+    
+            <div class="flexRow justifyContentCenter alignContentCenter flex">
+                <h2><u>Configurações</u></h2>
             </div>
-
-            <div> <br>
-                <label for="">Mude seu nome</label>
-                <input type="text" placeholder="digite um nome">
+    
+            <div class="flex back">
+                <button class="btnBgLaranja" onclick="location.href='/principal.html'"><img class="seta" alt="seta" src="./img/seta.png" /></button>
             </div>
+        </div>
+        <div class="subTopo"></div>
 
-            <div> <br>
-                <label for="">Altere sua senha</label>
-                <input type="text" placeholder="Digite uma nova senha">
-            </div>
+            <p class="paragrafo">Página referente ao melhoramento da experiência do usuário na plataforma, visando a adequação do site às preferências e necessidades do usuário, iniciando a implementação de um ambiente inclusivo e integrador.</p>
 
-            <p>Clique <Strong><a href="principal.html">aqui</a></Strong> para voltar a página inicial.</p>
+        </div>
+
+        <fieldset class="fieldsetContent">
+            <legend>Altere suas Configurações</legend>
+                <div class="cardContent">
+                    <label for="">Brilho</label>
+                    <input type="range">
+                </div>
+
+                <div class="cardContent"> <br>
+                    <label for="">Claro</label>
+                    <input type="radio">
+                    <label for="">Escuro</label>
+                    <input type="radio">
+                </div>
+
+                <div class="cardContent"> <br>
+                    <label for="">Alterar nome</label>
+                    <input type="text" placeholder="Digite o novo ome">
+                </div>
+
+                
+                <div class="cardContent"> <br>
+                    <label for="">Alterar email</label>
+                    <input type="text" placeholder="Digite o novo e-mail">
+                </div>
+
+                <div class="cardContent"> <br>
+                    <label for="">Alterar senha</label>
+                    <input type="text" placeholder="Digite uma nova senha">
+                </div>
+                <button type="button" class="btnSalvarAlteracoes">Salvar</button>
+        </fieldset>
 
         </body>
 </html>
